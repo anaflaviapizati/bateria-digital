@@ -1,10 +1,9 @@
 document.querySelectorAll('.tecla').forEach(tecla => {
   tecla.addEventListener('click', () => {
-    const instrumento = tecla.classList[1]; // Pega a segunda classe que indica o instrumento
+    const instrumento = tecla.classList[1];
     const som = document.getElementById(`som_${instrumento}`);                      
     if (som) {
-      som.currentTime = 0; // Reinicia o som para tocar desde o início
-      som.play();
+      som.currentTime = 0;
     }                           
     });
     tecla.addEventListener('keydown', (event) => {  
